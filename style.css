@@ -1,0 +1,75 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2.5rem;
+}
+
+.container {
+    background: darkgray;
+    width: 80%;
+    margin: auto;
+    border: dashed 1px deeppink;
+}
+
+#width-40 {
+    display: inline-block;
+    width: 40%;
+    border: 1px solid red;
+    background: violet;
+    margin-inline: 1rem;
+}
+
+.width-20 {
+    display: inline-block;
+    width: 20%;
+    border: 1px solid black;
+    background: orangered;
+    margin-inline: 1rem;
+}
+
+.border-blue {
+    border: 1px solid blue;
+    background: indianred;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    div#width-40 {
+        display: block;
+        width: 100%;
+    }
+
+    div.width-20 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    span {
+        display: none;
+    }
+    a {
+        display: none;
+    }
+
+    a+p {
+        display: none;
+    }
+}
